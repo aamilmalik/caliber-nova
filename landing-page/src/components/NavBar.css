@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.nav-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: gold;
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    height: auto;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: #ee9b00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold !important;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ca6702;
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row; /* Stack items vertically */
+        align-items: flex-start; /* Align to the start */
+    }
+
+    #logo {
+        width: 200px; /* Adjust logo size for smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Full width button on small screens */
+        text-align: center; /* Center text in button */
+        margin-top: 10px; /* Space between logo and button */
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-container {
+        height: auto; /* Allow height to adjust */
+        padding: 5px; /* Reduce padding */
+    }
+
+    #logo {
+        width: 120px; /* Further adjust logo size */
+        margin-top: 42px;
+    }
+
+    .btn {
+        padding: 1px 1px; /* Adjust padding for smaller screens */
+        font-size: 14px !important; /* Smaller font size */
+        margin-left: 60px;
+    }
+}

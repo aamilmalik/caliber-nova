@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-image: url(./src/assets/images/img6.jpg);
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    overflow-x: hidden;
+    color: #680202;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+
+.about-image {
+    width: 100%;
+    max-width: 400px; /* Adjust width as needed */
+    height: 380px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and text on small screens */
+}
+
+.text {
+    flex: 1; /* This allows the text section to grow */
+    text-align: left; /* Align text to the left */
+}
+
+.read-more-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row; /* Change to row layout on larger screens */
+
+    }
+
+    .about-image {
+        margin-right: 20px; /* Space between image and text on larger screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .about-container {
+        padding: 10px; /* Less padding on very small screens */
+        color: rgb(224, 7, 54);
+        font-size: 18px;
+
+        
+    }
+    .about-image{
+        margin-left: 60px;
+    height: 250px;
+    width: 250px;        
+    }
+
+    .read-more-button {
+        width: 100%; /* Full width button on small screens */
+    }
+}

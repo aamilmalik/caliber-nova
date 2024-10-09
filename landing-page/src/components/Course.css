@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.main-container {
+  background-image: url('./src/assets/images/bg.jpg'); /* Add your background image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+  padding: 40px 0; /* Add some padding */
+}
+
+.course-slider {
+  padding: 40px 80px;
+}
+
+.course-card {
+  padding: 10px;
+  cursor: pointer;
+  height: auto; /* Set height for cards */
+  width: 100%; /* Full width for responsiveness */
+  display: flex; /* Center card content */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white for cards */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+}
+
+.card .card-img-top {
+
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-title {
+  color: black; /* Title color */
+}
+
+.card-text {
+  color: #333; /* Description color */
+}
+
+/* Optional: To give more space around cards in the slider */
+.slick-slide {
+  padding: 20px; /* Adjust padding around slides */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .course-slider {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .course-card {
+    height: auto; /* Allow height to be dynamic */
+  }
+}

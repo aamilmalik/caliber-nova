@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.footer {
+  background: linear-gradient(to right, gold, silver, gold);
+  padding: 20px 100px;
+  text-align: center;
+  border-top: 2px solid #007bff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.footer-logo-17 {
+  max-width: 150px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+.footer-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.course-list,
+.social-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-list li,
+.social-list li {
+  margin: 5px 0;
+}
+
+.footer-contact,
+.footer-social {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.footer-bottom {
+  font-size: 0.9em;
+  color: #ddd5d5;
+  margin-top: 20px;
+  background-color: black;
+  padding: 10px;
+  position: relative;
+  top: 20px;
+  right: 7.5%;
+  width: 114.8%;
+}
+.footer-bottom p{
+  margin-top: 11px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    width: 180px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  .footer-bottom{
+    margin-top: -90px !important;
+  }
+
+}
+
+.social-list li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-list a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.social-list a:hover {
+  text-decoration: underline;
+}
+
+/* Updated icon sizes */
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+
